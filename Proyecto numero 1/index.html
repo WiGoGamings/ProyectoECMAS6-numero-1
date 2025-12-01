@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Planificador de Viajes ES6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Agenda tu Viaje</h1>
+
+        <div class="form-box">
+            <input id="destino" type="text" placeholder="Destino (Ej: Venezuela)">
+            <input id="fecha" type="date">
+            <input id="personas" type="number" min="1" value="1" placeholder="Número de personas">
+
+            <select id="transporte">
+                <option value="avión">Avión</option>
+                <option value="tren">Tren</option>
+
+            </select>
+
+            <button type="submit" id="btnAgregar">Agregar Viaje</button>
+            <button type="button" id="btnEliminar" class="danger">Eliminar Todo</button>
+        </div>
+
+        <h2>Citas</h2>
+        <div id="listaViajes" class="itinerario"></div>
+
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

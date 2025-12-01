@@ -1,0 +1,77 @@
+body {
+background-image: url(img/avion-juguete-mano_23-2147828110.avif);
+    margin: 0;
+    padding: 40px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 380px;
+    margin: auto;
+    background: transparent;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 12px #00ccff;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #07d2ff;
+    font-family: cursive;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 3px solid #00eaff;
+    
+}
+
+
+
+
+button {
+    background: transparent;
+    color: rgb(20, 67, 71);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffffff;
+}
+
+button.danger {
+    background: transparent;
+}
+
+button.danger:hover {
+    background: rgb(255, 255, 255);
+}
+
+.card {
+    background: #e5efffb6;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 7px;
+    border-left: 4px solid #00c9e3;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slide 0.4s forwards;
+}
+
+@keyframes slide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
